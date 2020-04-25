@@ -17,11 +17,8 @@ interface Request {
 class TransactionsRepository {
   private transactions: Transaction[];
 
-  private total = 0;
-
   constructor() {
     this.transactions = [];
-    this.total = 0;
   }
 
   public all(): Transaction[] {
